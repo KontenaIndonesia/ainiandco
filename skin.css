@@ -463,7 +463,7 @@ CUSTOM CLASSES
 .section-empty.border-bottom > .container:after, .section-bg-image.border-bottom > .container:after {
     content: "";
     width: 100%;
-    border-bottom: 1px solid #e2e2e2;
+    border-bottom: 0px solid #e2e2e2;
 }
 
 
@@ -2623,4 +2623,17 @@ RESPONSIVE
         margin-top: 0;
         float: left;
     }
+}
+
+/* Prevent text selection of a <body> element in all major browsers */
+body {
+    -youbkit-touch-callout: none; /* iOS Safari */
+    -youbkit-user-select: none;   /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE 10+ and Edge */
+    user-select: none;            /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+img {
+    pointer-events: none;
 }
