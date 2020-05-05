@@ -1215,6 +1215,7 @@ span.caption-box {
     padding: 13px 50px;
     font-size: 18px;
     border-radius: 30px;
+    letter-spacing: 1.5px;
 }
 
 .btn-sm {
@@ -2624,3 +2625,8 @@ RESPONSIVE
         float: left;
     }
 }
+
+.box-shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    padding: 15px;
+    border-radius: 5px;}
